@@ -156,6 +156,7 @@ ul {
 .current {
   color: var(--accent-cl);
 }
+/* псевдоэлемент- подчеркушка меню */
 .current::after {
   display: block;
   position: absolute;
@@ -336,7 +337,7 @@ ul {
   min-height: 16px;
   font-family: Roboto, sans-serif;
   font-style: normal;
-  font-weight: bold;
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
@@ -365,10 +366,26 @@ ul {
   flex-wrap: wrap;
   margin-left: -30px;
 }
+/* позиционируем описание над картинкой */
 .img-item {
+  position: relative;
   margin-left: 30px;
   list-style: none;
   flex-basis: calc(100% / 3 - 30px);
+}
+
+.img-discription {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 70px;
+  background: rgba(47, 48, 58, 0.8);
+  bottom: 0;
+}
+.title.centring {
+  text-align: center;
+  padding-top: 27px;
+  color: var(--white);
 }
 .team {
   font-style: normal;
